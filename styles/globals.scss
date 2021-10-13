@@ -1,0 +1,57 @@
+// @import '~bootstrap/scss/bootstrap.scss';
+@import '__breakpoints.scss';
+@import '__colors.scss';
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../public/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../public/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url('../public/fonts/BebasNeueBold.otf');
+}
+
+html,
+body,
+h1 {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    @include respond-to(monitor) { 
+        font-size: 24px;        
+    }
+    @include respond-to(tablet) { 
+        font-size: 24px;        
+    }   
+    @include respond-to(movil) { 
+        font-size: 16px;
+    }    
+    font-family: 'Montserrat', sans-serif;
+}
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a:hover {
+    color: $ink-blog;
+  }
